@@ -1,0 +1,45 @@
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(/images/bg-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 320px;
+    margin: auto;
+    height: 40vh;
+}
+
+#mock-up {
+    width: 90%;
+    margin:0 auto;
+    display:block;
+    padding-top: 4rem;
+}
+
+#logo {
+    width: 40%;
+    padding-top: 1.5rem;
+}
+
+button {
+    margin:0 auto;
+    display:block;
+}
