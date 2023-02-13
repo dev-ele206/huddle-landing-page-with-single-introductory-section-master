@@ -19,6 +19,7 @@ h2 {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    padding: 0 10px;
 }
 
 .container {
@@ -29,17 +30,44 @@ p {
 
 #mock-up {
     width: 90%;
-    margin:0 auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
     padding-top: 4rem;
 }
 
 #logo {
     width: 40%;
     padding-top: 1.5rem;
+    padding-left: 1rem;
 }
 
 button {
-    margin:0 auto;
-    display:block;
+    margin: 0 auto;
+    display: block;
+    background-color: white;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 65%;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social-media-logos {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding-top: 2rem;
+}
+
+.sm-logo {
+    padding: 10px;
 }
