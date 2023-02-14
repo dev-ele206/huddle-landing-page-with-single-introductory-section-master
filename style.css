@@ -7,12 +7,12 @@ body {
     color: white;
 }
 
-h2,
+h1,
 p {
     text-align: center;
 }
 
-h2 {
+h1 {
     font-family: 'Poppins', sans-serif;
     padding-top: 2rem;
 }
@@ -22,10 +22,14 @@ p {
     padding: 0 10px;
 }
 
-.container {
+.container-mobile {
     max-width: 320px;
     margin: auto;
     height: 40vh;
+}
+
+.container-desktop {
+    display: none;
 }
 
 #mock-up {
@@ -41,7 +45,7 @@ p {
     padding-left: 1rem;
 }
 
-button {
+#button-mobile {
     margin: 0 auto;
     display: block;
     background-color: white;
@@ -70,4 +74,92 @@ button:hover {
 
 .sm-logo {
     padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    body {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(/images/bg-desktop.svg);
+        background-position: -190px;
+        background-size: cover;
+        color: white;
+    }
+
+
+
+    .container-mobile {
+        display: none;
+    }
+
+    .container-desktop {
+        display: flex;
+    }
+
+    .left-side {
+        width: 55%;
+    }
+
+    .right-side {
+        width: 45%;
+        margin-top: 7rem;
+    }
+
+    #desktop-info {
+        text-align: left;
+        padding-right: 100px;
+        padding-left: 0;
+        margin-top: 5px;
+    }
+
+    #desktop-heading {
+        text-align: left;
+        padding-right: 150px;
+        margin-bottom: 5px;
+    }
+
+
+
+    #logo {
+        width: 20%;
+    }
+
+    #mock-up {
+        width: 90%;
+    }
+
+    #button-desktop {
+        display: block;
+        background-color: white;
+        border: none;
+        color: hsl(257, 40%, 49%);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        width: 35%;
+    }
+
+    #button-desktop:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+    }
+
+    .social-media-logos {
+        display: none;
+    }
+
+    .social-media-logos-desktop {
+        position: absolute;
+        top: 95%;
+        left: 90%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .sm-logo-desktop {
+        width: 30px;
+        height: auto;
+
+    }
 }
